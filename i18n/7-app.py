@@ -43,7 +43,7 @@ def get_locale():
 @app.route("/", methods=["GET"], strict_slashes=False)
 def hello_world():
     ''' return the template '''
-    return render_template('5-index.html')
+    return render_template('7-index.html')
 
 
 def get_user():
