@@ -1,57 +1,37 @@
-# 0x0D-NoSQL
-:open_file_folder: Specializations - Web Stack programming ― Back-end  
-:bust_in_silhouette: by Emmanuel Turlay, Staff Software Engineer at Cruise and Guillaume, CTO at Holberton school  
-:copyright: **[Holberton School](https://www.holbertonschool.com/)**  
-:bookmark: 
+# MongoDB List Databases
 
-## Resources
-### Read or watch:
-* [NoSQL Databases Explained](https://riak.com/resources/nosql-databases/)
-* [What is NoSQL ?](https://www.youtube.com/watch?v=qUV2j3XBRHc)
-* [Building Your First Application: An Introduction to MongoDB](https://www.youtube.com/watch?v=ClAQEARNUoQ)
-* [MongoDB Tutorial 2 : Insert, Update, Remove, Query](https://www.youtube.com/watch?v=CB9G5Dvv-EE)
-* [Aggregation](https://docs.mongodb.com/manual/aggregation/)
-* [Introduction to MongoDB and Python](https://realpython.com/introduction-to-mongodb-and-python/)
-* [mongo Shell Methods](https://docs.mongodb.com/manual/reference/method/)
-* [The mongo Shell](https://docs.mongodb.com/manual/mongo/)
-* [Mongo Official installation guide](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
-* [Fixing /data/db not found error in MacOS X when starting MongoDB](https://bryantson.medium.com/fixing-data-db-not-found-error-in-macos-x-when-starting-mongodb-d7b82abb2479)
-* [MongoDB data/db not found](https://stackoverflow.com/questions/37702957/mongodb-data-db-not-found)
-
-## Learning Objectives
-At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/2012/04/feynman-technique/), without the help of Google:
-### General
-* What NoSQL means
-* What is difference between SQL and NoSQL
-* What is ACID
-* What is a document storage
-* What are NoSQL types
-* What are benefits of a NoSQL database
-* How to query information from a NoSQL database
-* How to insert/update/delete information from a NoSQL database
-* How to use MongoDB
+This project provides scripts to list all databases in MongoDB.
 
 ## Requirements
-* A ```README.md``` file.
 
-## Tasks
-* [x] 0. List all databases
-* [x] 1. Create a database
-* [x] 2. Insert document
-* [x] 3. All documents
-* [x] 4. All matches
-* [x] 5. Count
-* [x] 6. Update
-* [x] 7. Delete by match
-* [x] 8. List all documents in Python
-* [x] 9. Insert a document in Python
-* [x] 10. Change school topics
-* [x] 11. Where can I learn Python?
-* [x] 12. Log stats
-* [x] 13. Regex filter
-* [x] 14. Top students
-* [ ] 15. Log stats - new version
+- Ubuntu 18.04 LTS
+- MongoDB 4.2
+- Python 3.7
+- PyMongo 3.10
 
-## Software Developer
-Built by [Javi](https://github.com/javi0b01) :copyright: 2020 - 2021  
-Found a bug or have an idea? [Contact me](https://www.linkedin.com/in/javi0b01/).
+## Installation
+
+1. Install MongoDB 4.2:
+    ```sh
+    $ wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | apt-key add -
+    $ echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list
+    $ sudo apt-get update
+    $ sudo apt-get install -y mongodb-org
+    ```
+
+2. Start MongoDB service:
+    ```sh
+    $ sudo service mongod start
+    ```
+
+3. Install PyMongo:
+    ```sh
+    $ pip3 install pymongo
+    ```
+
+## Usage
+
+### MongoDB Shell Script
+
+To list all databases using the MongoDB shell script, run:
+```sh
