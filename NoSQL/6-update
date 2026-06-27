@@ -1,7 +1,5 @@
-// adds a new attribute to a document in the collection
-var school = db.getSiblingDB("my_db").school;
-school.update(
-    {name: "Holberton school"},
+db.school.update(
+    {name: "ALX"},
     {$set: {address: "972 Mission street"}},
-    {multi:true}
+    {multi: true}
 )

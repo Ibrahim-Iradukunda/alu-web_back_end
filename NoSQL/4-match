@@ -1,3 +1,1 @@
-// lists all documents with name="Holberton school" in the collection school
-var school = db.getSiblingDB("my_db").school;
-school.find({name:"Holberton school"})
+db.school.find({name: "ALX"})

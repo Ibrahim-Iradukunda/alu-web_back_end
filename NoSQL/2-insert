@@ -1,3 +1,1 @@
-// inserts a document in the collection
-var school = db.getSiblingDB("my_db").school;
-school.insert({name: "Holberton school"})
+db.school.insert({name: "ALX"})
